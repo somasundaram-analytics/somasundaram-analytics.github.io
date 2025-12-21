@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: green;
     padding: 30px;
 }
 
