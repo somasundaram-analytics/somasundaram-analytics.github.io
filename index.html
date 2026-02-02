@@ -2,56 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Somasundaram | Data Analyst</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somasundaram | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header / Hero */
+        header {
+            background: linear-gradient(to right, #1c92d2, #f2fcfe);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 15px 0 5px;
+            font-size: 2.5rem;
+        }
+        header h2 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #e0f7fa;
+        }
+        header p {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #f0f9ff;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* About */
+        #about p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #skills ul li {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 50px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Projects */
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .project-card p {
+            margin: 10px 0;
+        }
+
+        /* Contact */
+        #contact p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            #skills ul {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+    <!-- Header -->
     <header>
-        <img src="profile1.jpg" alt="Somasundaram" class="profile1-pic">
+        <img src="https://i.ibb.co/6t5B3qk/profile.png" alt="Somasundaram">
         <h1>Somasundaram</h1>
-        <h2>Aspiring Data Analyst</h2>
-        <p>
-            Passionate about turning data into insights using Python, SQL, and visualization tools.
-        </p>
+        <h2>Aspiring Data Analyst & Machine Learning Enthusiast</h2>
+        <p>Passionate about turning data into insights using Python, Machine Learning, and Embedded Systems.</p>
     </header>
 
-    <section>
-        <h3>About Me</h3>
-        <p>
-            I am an aspiring Data Analyst with strong interest in data-driven decision making,
-            analytics, and business problem solving.
-        </p>
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring Data Analyst and ML enthusiast with strong interest in data-driven decision making, analytics, and building real-world solutions using Python, OpenCV, and embedded systems like Raspberry Pi.</p>
     </section>
 
-    <section>
-        <h3>Projects</h3>
-        <div class="project">
-            <h4>Supply Chain Delay & Demand Risk Analysis</h4>
-            <p>
-                Analyzed supplier delays, demand fluctuations, and inventory risks using data analytics techniques.
-            </p>
-            <p><strong>Tools:</strong> Python, Pandas, Excel, Power BI</p>
-        </div>
-    </section>
-
-    <section>
-        <h3>Skills</h3>
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
         <ul>
-            <li>Python (Pandas, NumPy)</li>
-            <li>SQL</li>
-            <li>Excel</li>
-            <li>Power BI / Tableau</li>
+            <li><i class="fab fa-python"></i> Python (NumPy, Pandas)</li>
+            <li><i class="fas fa-brain"></i> Machine Learning (Scikit-learn, Model Training & Evaluation)</li>
+            <li><i class="fas fa-code"></i> C, C++, Java</li>
+            <li><i class="fas fa-microchip"></i> Raspberry Pi / Embedded Systems</li>
         </ul>
     </section>
 
-    <section>
-        <h3>Contact</h3>
-        <p>Email: ssomasundaram902@gmail.com</p>
-        <p>GitHub: https://github.com/somasundaram-analytics</p>
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Animal Detection and Prevention System</h3>
+            <p>Developed a real-time animal detection system using Python, OpenCV, and YOLO on Raspberry Pi. Implemented alerts via audio, relay, LCD display, and SMS to reduce crop damage.</p>
+            <p><strong>Tech Stack:</strong> Python, OpenCV, YOLO, Raspberry Pi</p>
+            <a href="https://github.com/somasundaram-analytics/Animal-Detection" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Accident Detection System</h3>
+            <p>Built an accident detection system using machine learning to classify accident and non-accident scenarios. Performed data preprocessing, feature extraction, model training, and evaluation in Python & Jupyter Notebook.</p>
+            <p><strong>Tech Stack:</strong> Python, Machine Learning, Jupyter Notebook</p>
+            <a href="https://github.com/somasundaram-analytics/Accident-Detection" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Supply Chain Delay & Demand Risk Analysis</h3>
+            <p>Analyzed supplier delays, demand fluctuations, and inventory risks using data analytics techniques.</p>
+            <p><strong>Tools:</strong> Python, Pandas, Excel, Power BI</p>
+            <a href="https://github.com/somasundaram-analytics/Supply-Chain-Analysis" target="_blank">GitHub Link</a>
+        </div>
     </section>
-</div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i> Email: ssomasundaram902@gmail.com</p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/somasundaram-analytics" target="_blank">https://github.com/somasundaram-analytics</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+    </section>
 
 </body>
 </html>
