@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaf3ff;
+    background-color: #e8f5e9;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 900px;
     margin: auto;
-    background: #ffffff;
+    background-color: #ffffff;
     padding: 30px;
 }
 
